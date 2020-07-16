@@ -1,0 +1,26 @@
+#!/usr/bin/env zsh
+
+function alias_if_exists() {
+    # Does the alias only if the aliased program is installed
+    if command -v $2 > /dev/null; then
+        alias "$1"="$2"
+    fi
+}
+
+# Defaults
+alias_if_exists 'diff' 'colordiff'
+alias_if_exists 'vim' 'nvim'
+
+# Shortcuts
+
+alias ds="cd"
+
+# Git Aliases
+alias ga='git add'
+alias gs='git status'
+alias gp='git pull'
+
+# Jupyter
+alias jc="jupyter console"
+alias jn="jupyter notebook"
+alias jn-b="jupyter notebook --no-browser"

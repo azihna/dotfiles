@@ -1,0 +1,49 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+
+# Editing tools and IDEs #
+##########################
+[._]*.sw[a-p]
+[._]*.s[a-v][a-z]
+*~
+~*
+\#*\#
+\.#*
+.ipynb_checkpoints/
+.vscode/
+.idea
+
+# Python Specific #
+###################
+venv
+env
+eggs
+.eggs
+*.egg-info
+*.egg
+.env
+.pytest_cache/
+.coverage
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+
+# OS generated files #
+######################
+._*
+Desktop.ini
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+

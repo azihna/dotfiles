@@ -1,0 +1,22 @@
+[user]
+	name = Alihan Zihna
+	email = alihanz@gmail.com
+[core]
+    editor = nvim
+    excludesfile = ~/.gitignore_global
+[color]
+	ui = auto
+[merge]
+    tool = nvim -d
+[mergetool "nvim"]
+    cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+[mergetool]
+    prompt = false
+[github]
+    user = Carwinyr 
+[push]
+    default = simple
+[diff]
+    algorithm = patience
+    compactionHeuristic = true
+
