@@ -1,4 +1,4 @@
-# Alihan Zihna dotfiles
+# Alihan Zihna's dotfiles
 
 Custom configuration files for:  
 - Bash
