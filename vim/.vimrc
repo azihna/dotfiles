@@ -112,7 +112,7 @@ let python_highlight_all=1 " enable all Python syntax highlighting features
 let g:airline_powerline_fonts=1
 
 " Deoplete
-let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup=1
 
 " Slimux
 map <Leader>s :SlimuxREPLSendLine<CR>

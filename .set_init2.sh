@@ -2,7 +2,10 @@
 sudo apt-get install fonts-powerline
 
 # activate zsh autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions /home/alihan/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions $(echo $HOME)/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
+# install zsh syntax highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $(echo $HOME)/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # install alacritty
 sudo add-apt-repository ppa:mmstick76/alacritty

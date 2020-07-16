@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/home/alihan/.oh-my-zsh"
-# ZSH_THEME="agnoster"
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
 
 
 # Display red dots whilst waiting for completion.
@@ -10,8 +10,7 @@ COMPLETION_WAITING_DOTS="true"
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git zsh-autosuggestions)
-source /home/alihan/Projects/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
