@@ -37,6 +37,7 @@ Plug 'esamattis/slimux'  " Better tmux integration to use with JNs
 
 " color
 Plug 'patstockwell/vim-monokai-tasty'
+
 " Auto-completer
 if has('nvim')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -107,11 +108,11 @@ set splitright
 " NERDTree
 map <F3> :NERDTreeToggle<CR>
 
-" python-syntax plug
+" python-syntax plugin
 let python_highlight_all=1 " enable all Python syntax highlighting features
 
-" Airline
-let g:airline_powerline_fonts=1
+" Undo Tree
+nnoremap <F5> :UndotreeToggle<cr>
 
 " Deoplete
 let g:deoplete#enable_at_startup=1
