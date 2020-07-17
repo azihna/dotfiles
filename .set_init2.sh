@@ -17,6 +17,7 @@ sudo apt-get install python3
 sudo apt-get install python3-pip
 # for Neovim deoplete
 pip3 install --upgrade msgpack==1.0.0
+pip3 install --user jedi
 
 # Install neovim
 sudo apt-get install neovim
@@ -26,3 +27,4 @@ sudo apt-get install tmux
 
 # Install Stow
 sudo apt-get install stow
+

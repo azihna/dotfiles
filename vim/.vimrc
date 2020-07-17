@@ -7,8 +7,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'vim-syntastic/syntastic'
-Plug 'nvie/vim-flake8'
 
 " Search
 Plug 'ctrlpvim/ctrlp.vim'
@@ -25,9 +23,11 @@ Plug 'tpope/vim-surround'  " Surround stuff with other stuff
 Plug 'itchyny/lightline.vim'  " StatusBar
 Plug 'scrooloose/nerdtree'  " File Explorer
 Plug 'tpope/vim-fugitive'  " Git Interface
+Plug 'mbbill/undotree'  " Show edit past
 
 " Syntactic language support
 Plug 'vim-python/python-syntax'  " Better support for Python 3
+Plug 'nvie/vim-flake8'  " PEP8 checks for Python
 Plug 'stephpy/vim-yaml'  " YAML support
 Plug 'elzr/vim-json'  " Better JSON Support
 Plug 'mechatroner/rainbow_csv'  " CSV color coding
@@ -45,6 +45,8 @@ else
     Plug 'roxma/nvim-yarp'
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
+Plug 'deoplete-plugins/deoplete-jedi'
+
 call plug#end()
 
 let mapleader=" "  " maps leader to space
@@ -113,6 +115,8 @@ let g:airline_powerline_fonts=1
 
 " Deoplete
 let g:deoplete#enable_at_startup=1
+" Virtual environment config for Deoplete
+" let g:python3_host_prog = '/full/to/virt/env/pythn'
 
 " Slimux
 map <Leader>s :SlimuxREPLSendLine<CR>
