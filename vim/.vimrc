@@ -87,7 +87,7 @@ set showmatch     " highlight matching brackets
 set incsearch     " search as characters are entered
 set hlsearch      " highlight matches
 " set clipboard=unnamed " use the system clipboard
-set clipboard=unnamedplus " use the system clipboard
+set clipboard+=unnamedplus " use the system clipboard
 
 " Folding
 set foldenable    " enable folding

@@ -20,7 +20,15 @@ pip3 install --upgrade msgpack==1.0.0
 pip3 install --user jedi
 
 # Install neovim
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
 sudo apt-get install neovim
+
+# Install python3 neovim interface
+sudo apt-get install python3-neovim
+
+# Make sure a clipboard tool is installed
+sudo apt-get install xclip
 
 # Install tmux
 sudo apt-get install tmux
