@@ -117,7 +117,7 @@ nnoremap <F5> :UndotreeToggle<cr>
 " Deoplete
 let g:deoplete#enable_at_startup=1
 " Virtual environment config for Deoplete
-" let g:python3_host_prog = '/full/to/virt/env/pythn'
+let g:python3_host_prog = '/usr/bin/python3'
 
 " Slimux
 map <Leader>s :SlimuxREPLSendLine<CR>
@@ -129,3 +129,10 @@ map <Leader>k :SlimuxSendKeysLast<CR>
 " lightline
 set noshowmode  " Unncessary due to lightline
 let g:lightline = {'colorscheme': 'jellybeans'}
+
+" local customization in ~/.vimrc_local
+let $LOCALFILE=expand("~/.vimrc_local")
+if filereadable($LOCALFILE)
+    source $LOCALFILE
+endif
+
