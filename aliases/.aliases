@@ -24,3 +24,5 @@ alias gp='git pull'
 alias jc="jupyter console"
 alias jn="jupyter notebook"
 alias jn-b="jupyter notebook --no-browser"
+# virtualenv aware IPython launch
+alias jcpy="python3 -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
