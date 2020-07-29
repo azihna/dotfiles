@@ -19,6 +19,7 @@ alias ds="cd"
 alias ga='git add'
 alias gs='git status'
 alias gp='git pull'
+alias glg='git log --all --decorate --graph --oneline'
 
 # Jupyter
 alias jc="jupyter console"
