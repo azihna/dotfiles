@@ -12,6 +12,9 @@ apt-get install zsh
 # install tmux
 apt-get install tmux
 
+# install curl
+apt-get install curl
+
 # make zsh the default
 chsh -s $(which zsh)
 
