@@ -21,6 +21,9 @@ alias gs='git status'
 alias gp='git pull'
 alias glg='git log --all --decorate --graph --oneline'
 
+# Python
+alias python='python3'
+alias pip='pip3'
 # Jupyter
 alias jc="jupyter console"
 alias jn="jupyter notebook"
