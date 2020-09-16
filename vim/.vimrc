@@ -26,7 +26,8 @@ Plug 'tpope/vim-fugitive'  " Git Interface
 Plug 'mbbill/undotree'  " Show edit past
 
 " Syntactic language support
-Plug 'vim-python/python-syntax'  " Better support for Python 3
+Plug 'dense-analysis/ale'
+" Plug 'vim-python/python-syntax'  " Better support for Python 3
 Plug 'nvie/vim-flake8'  " PEP8 checks for Python
 Plug 'stephpy/vim-yaml'  " YAML support
 Plug 'elzr/vim-json'  " Better JSON Support
@@ -130,6 +131,8 @@ map <Leader>k :SlimuxSendKeysLast<CR>
 set noshowmode  " Unncessary due to lightline
 let g:lightline = {'colorscheme': 'jellybeans'}
 
+" ALE
+let g:ale_python_pylint_executable = 'pylint3'   " or 'python' for Python 2
 " local customization in ~/.vimrc_local
 let $LOCALFILE=expand("~/.vimrc_local")
 if filereadable($LOCALFILE)
