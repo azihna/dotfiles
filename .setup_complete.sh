@@ -35,3 +35,6 @@ apt-get install tmux
 
 # Install Stow
 apt-get install stow
+
+# Install shellcheck
+apt-get install shellcheck
