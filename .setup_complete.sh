@@ -38,3 +38,6 @@ apt-get install stow
 
 # Install shellcheck
 apt-get install shellcheck
+
+# Install system-control tools
+apt-get install htop iotop lsof ncdu
