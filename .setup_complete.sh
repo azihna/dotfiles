@@ -36,8 +36,8 @@ apt-get install tmux
 # Install Stow
 apt-get install stow
 
-# Install shellcheck
-apt-get install shellcheck
+# Install static code analysis tools
+apt-get install shellcheck python3-proselint pylint
 
 # Install system-control tools
 apt-get install htop iotop lsof ncdu
