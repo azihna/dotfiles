@@ -1,3 +1,4 @@
+#! /bin/env bash
 apt update
 
 # install vim
@@ -16,7 +17,7 @@ apt-get install tmux
 apt-get install curl
 
 # make zsh the default
-chsh -s $(which zsh)
+chsh -s "$(command -v zsh)"
 
 # download and install oh my zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
