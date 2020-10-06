@@ -1,5 +1,3 @@
-#! /bin/env bash
-
 # Environment setup
 if [ -f "$HOME/.env" ]; then
     # shellcheck source=/dev/null
