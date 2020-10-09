@@ -48,6 +48,9 @@ else
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
 Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
+
 
 call plug#end()
 
@@ -130,6 +133,17 @@ map <Leader>k :SlimuxSendKeysLast<CR>
 " lightline
 set noshowmode  " Unncessary due to lightline
 let g:lightline = {'colorscheme': 'jellybeans'}
+
+" neosnippet
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+            \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+if has('conceal')
+    set conceallevel=2 concealcursor=niv
+endif
 
 " ALE
 let g:ale_python_pylint_executable = 'pylint3'   " or 'python' for Python 2
