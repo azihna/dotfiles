@@ -145,6 +145,9 @@ if has('conceal')
     set conceallevel=2 concealcursor=niv
 endif
 
+" add custom snippets files
+let g:neosnippet#snippets_directory='~/.vim/custom_snips'
+
 " ALE
 let g:ale_python_pylint_executable = 'pylint3'   " or 'python' for Python 2
 " local customization in ~/.vimrc_local
