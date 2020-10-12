@@ -1,0 +1,4 @@
+new -s dev_sess -n dev_vim 
+split-window -v
+split-window -h 'htop'
+selectp -t 1
