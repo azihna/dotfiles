@@ -2,9 +2,42 @@ snippet     import_eda
 abbr        imp_eda_modules
 alias       imp_eda
 options     head
+        import os
+        import sys
         import numpy as np
         import pandas as pd
         from scipy import stats
+        import matplotlib.pyplot as plt
+        import seaborn as sns
+        sns.set_style()
+
+
+snippet     import_baseml
+abbr        imp_baseml_modules
+alias       imp_baseml
+options     head
+        import os
+        import sys
+        import numpy as np
+        import pandas as pd
+        from scipy import stats
+        from sklearn import preprocessing, model_selection
+        from sklearn import linear_models, ensemble
+        from sklearn import base
+        import matplotlib.pyplot as plt
+        import seaborn as sns
+        sns.set_style()
+
+
+snippet     import_tf
+abbr        imp_tf_modules
+alias       imp_tf
+options     head
+        import os
+        import sys
+        import numpy as np
+        import tensorflow as tf
+        from tensorflow import keras
         import matplotlib.pyplot as plt
         import seaborn as sns
         sns.set_style()
