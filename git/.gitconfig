@@ -13,7 +13,7 @@
 [mergetool]
     prompt = false
 [github]
-    user = Carwinyr 
+    user = alihanz 
 [push]
     default = simple
 [diff]
