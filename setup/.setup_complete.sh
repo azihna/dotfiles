@@ -8,37 +8,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$HOME"/.oh-m
 # Setup powerline for zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$HOME"/.oh-my-zsh/custom/themes/powerlevel10k
 
-# install alacritty
-add-apt-repository ppa:mmstick76/alacritty
-apt update
-apt install alacritty
-
 # install python
-apt-get install python3 
-apt-get install python3-pip
-# for Neovim deoplete
-pip3 install --upgrade msgpack==1.0.0
-pip3 install --user jedi
+apt-get install python3 python3-pip
 
-# Install neovim
+# Install neovim and stow
 add-apt-repository ppa:neovim-ppa/stable
 apt-get update
 apt-get install neovim
-
-# Install python3 neovim interface
-apt-get install python3-neovim
-
-# Make sure a clipboard tool is installed
-apt-get install xclip
-
-# Install tmux
-apt-get install tmux
-
-# Install Stow
-apt-get install stow
-
-# Install static code analysis tools
-apt-get install shellcheck python3-proselint pylint
+apt-get install neovim python3-neovim xclip stow
 
 # Install system-control tools
 apt-get install htop iotop lsof ncdu
