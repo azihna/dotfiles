@@ -48,3 +48,5 @@ fi
 # Enable vim mode
 bindkey -v
 
+# Environmental Variables
+export GPG_TTY=$(tty)
