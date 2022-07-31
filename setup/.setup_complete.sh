@@ -17,7 +17,7 @@ apt-get update
 apt-get install neovim python3-neovim xclip stow
 
 # Install system-control tools
-apt-get install htop iotop lsof ncdu
+apt-get install htop iotop lsof ncdu ranger
 
 # Install git credential manager for gpg
 mkdir ~/pkgdown
