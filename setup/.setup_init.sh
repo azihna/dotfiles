@@ -1,8 +1,8 @@
 #! /bin/env bash
 apt update
 
-# install vim
-apt-get install vim zsh curl
+apt install wget
+apt-get install vim zsh wget curl
 
 # make zsh the default
 chsh -s "$(command -v zsh)"
