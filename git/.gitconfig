@@ -1,11 +1,11 @@
 [user]
-	name = Alihan Zihna
-	email = alihanz@gmail.com
+    name = Alihan Zihna
+    email = alihanz@gmail.com
 [core]
     editor = nvim
     excludesfile = ~/.gitignore_global
 [color]
-	ui = auto
+    ui = auto
 [merge]
     tool = nvim -d
 [mergetool "nvim"]
@@ -19,9 +19,12 @@
 [diff]
     algorithm = patience
     compactionHeuristic = true
-
 [credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager-core
-	credentialStore = gpg
+    helper = /usr/local/share/gcm-core/git-credential-manager-core
+    credentialStore = gpg
 [credential "https://dev.azure.com"]
-	useHttpPath = true
+    useHttpPath = true
+[alias]
+    st = status
+    ci = commit -v
+    ac = commit -am
