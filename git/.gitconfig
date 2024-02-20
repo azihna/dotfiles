@@ -8,6 +8,7 @@
     ui = auto
 [merge]
     tool = nvim -d
+    conflictstyle = zdiff3
 [mergetool "nvim"]
     cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
 [mergetool]
@@ -15,15 +16,24 @@
 [github]
     user = alihanz 
 [push]
-    default = simple
+    default = current
 [diff]
-    algorithm = patience
-    compactionHeuristic = true
+    algorithm = histogram
+    colorMoved = default
+    context = 10
 [credential]
     helper = /usr/local/share/gcm-core/git-credential-manager-core
     credentialStore = gpg
 [credential "https://dev.azure.com"]
     useHttpPath = true
+[init]
+    defaultBranch = main
+[commit]
+    verbose = true
+[help]
+    autocorrect = prompt
+[fetch]
+    prune = true
 [alias]
     st = status
     ci = commit -v
