@@ -2,7 +2,7 @@
     name = Alihan Zihna
     email = alihanz@gmail.com
 [core]
-    editor = nvim
+    editor = "code --wait"
     excludesfile = ~/.gitignore_global
 [color]
     ui = auto
@@ -35,6 +35,8 @@
 [fetch]
     prune = true
 [alias]
-    st = status
+    st = status -s
     ci = commit -v
     ac = commit -am
+    conf = config --global --edit
+    pr = pull --rebase
